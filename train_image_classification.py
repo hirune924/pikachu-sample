@@ -15,8 +15,6 @@ import sys
 import cv2
 import numpy as np
 import pandas as pd
-sys.path.append('../input/pikachu-libraries/pytorch-lightning-1.1.7/pytorch-lightning-1.1.7')
-
 
 import pytorch_lightning as pl
 from pytorch_lightning.metrics import Accuracy
