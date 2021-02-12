@@ -6,7 +6,7 @@ def load_pytorch_model(ckpt_name, model, ignore_suffix='model'):
     for k, v in state_dict.items():
         name = k
         if name.startswith(str(ignore_suffix)+"."):
-            name = name.replace(str(ignore_suffix)+".", "")  # remove `model.`
+            name = name.replace(str(ignore_suffix)+".", "", 1)  # remove `model.`
         new_state_dict[name] = v
     model.load_state_dict(new_state_dict)
     return model
