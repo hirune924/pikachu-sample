@@ -1,7 +1,7 @@
 import torch
 
 def load_pytorch_model(ckpt_name, model, ignore_suffix='model'):
-    state_dict = torch.load(ckpt_name)["state_dict"]
+    state_dict = torch.load(ckpt_name, map_location='cpu')["state_dict"]
     new_state_dict = {}
     for k, v in state_dict.items():
         name = k
