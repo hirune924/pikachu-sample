@@ -19,7 +19,7 @@ RUN pip install --upgrade pip && \
     pip install pandas scikit-image opencv-python openslide-python \
                 scikit-learn pytorch-lightning imagecodecs tifffile \
                 pretrainedmodels catalyst[all] segmentation-models-pytorch timm hydra-core \
-                scikit-plot && \
+                scikit-plot iterative-stratification && \
     pip install -U neptune-client && \
     pip install -U git+https://github.com/albumentations-team/albumentations && \
     pip install kornia captum && \
