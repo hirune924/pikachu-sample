@@ -29,11 +29,10 @@ from omegaconf import OmegaConf
 conf_dict = {'batch_size': 32, 
              'epoch': 10,
              'image_size': 512,
-             'model_name': 'tf_efficientnet_b0'
-             'data_dir', '../input/ranzcr-clip-catheter-line-classification',
-             'output_dir', './'}
+             'model_name': 'tf_efficientnet_b0',
+             'data_dir': '../input/ranzcr-clip-catheter-line-classification',
+             'output_dir': './'}
 conf_base = OmegaConf.create(conf_dict)
-
 
 ####################
 # Dataset
