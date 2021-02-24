@@ -21,4 +21,6 @@ RUN pip install --upgrade pip && \
                 scikit-plot && \
     pip install -U neptune-client && \
     pip install -U git+https://github.com/albumentations-team/albumentations && \
-    pip install kornia captum
+    pip install kornia captum && \
+    pip install fairscale && \
+    pip install deepspeed mpi4py
