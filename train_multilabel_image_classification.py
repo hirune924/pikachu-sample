@@ -17,7 +17,8 @@ from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
 import torch
 from torch.utils.data import Dataset, DataLoader
 
-from sklearn.model_selection import StratifiedKFold
+#from sklearn.model_selection import StratifiedKFold
+from sklearn import model_selection
 import albumentations as A
 import timm
 from omegaconf import OmegaConf
