@@ -7,5 +7,6 @@ A collection of baselines with few dependencies and easy customization
 - [ ] semantic segmentation
 - [ ] instance segmentation
 - [ ] object detection
-- [ ] fixmatch
-- [ ] puzzleCAM
+- [ ] semi supervised image classification (fixmatch)
+- [ ] weakly supervised semantic segmentation (puzzleCAM)
+- [ ] add inference sample code
