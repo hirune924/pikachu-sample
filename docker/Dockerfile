@@ -8,7 +8,8 @@ LABEL maintainer="@hirune924"
 RUN conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=10.1 -c pytorch
 
 RUN apt-get update --fix-missing && apt-get install -y \
-    git libopencv-dev python-openslide unzip 
+    git libopencv-dev python-openslide unzip && \
+    apt-get install -y libopenmpi-dev
     #&& \
     #apt-get clean && \
     #apt-get autoremove && \
