@@ -18,10 +18,11 @@ RUN apt-get update --fix-missing && apt-get install -y \
 RUN pip install --upgrade pip && \
     pip install pandas scikit-image opencv-python openslide-python \
                 scikit-learn pytorch-lightning imagecodecs tifffile \
-                pretrainedmodels catalyst[all] segmentation-models-pytorch timm hydra-core \
+                pretrainedmodels catalyst[all] segmentation-models-pytorch hydra-core \
                 scikit-plot iterative-stratification && \
     pip install -U neptune-client && \
     pip install -U git+https://github.com/albumentations-team/albumentations && \
+    pip install -U git+https://github.com/rwightman/pytorch-image-models && \
     pip install kornia captum && \
     pip install fairscale && \
     pip install deepspeed mpi4py
