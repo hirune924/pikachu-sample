@@ -1,11 +1,12 @@
 #FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-devel
-FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-devel
+#FROM pytorch/pytorch:1.6.0-cuda10.1-cudnn7-devel
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 LABEL maintainer="@hirune924"
 
-RUN conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=10.1 -c pytorch
+#RUN conda install pytorch==1.7.0 torchvision torchaudio cudatoolkit=10.1 -c pytorch
 
 RUN apt-get update --fix-missing && apt-get install -y \
     git libopencv-dev python-openslide unzip && \
